@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.intro{
+	position: relative;
+    text-align: center;
+    color: white;
+    background-color: #10C7F4;
+}
+.centered {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.styling {
+margin-bottom: 20px;
+padding-top: 30px;
+color: white;
+font-size: 3rem;
+font-family: sans-serif;
+}
+.styling1 {
+
+color: white;
+font-size: 3rem;
+font-family: sans-serif;
+padding-bottom: 20px;
+}
+
+.image{
+
+	height: 200px;
+	width: 200px;
+}
+.Id {
+    padding: 10px;
+    padding-left: 20px;
+    color: #13A6FB;
+}
+
+.gap {
+	padding-left:  20px;
+	padding-right: 20px;
+}
+/*.year {
+
+	padding-bottom: 10px;
+}*/
+
+
+/*
+section styling
+*/
+body {
+    word-break: break-all;
+}
+
+#dataSection {
+    display: none;
+}
+.userDetails{
+    border:2px solid #ddd;border-radius: 0.5em;
+}
+
+.coverHeight {
+    max-height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.userName {
+    font-size: 3vw;
+}
+
+.profileHeight {
+    border: 0.5vw solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px silver;
+}
+
+.rowStyle {
+    border-bottom: 1px solid #ddd;
+    margin-top: 1em !important;
+    background-color:#10C7F4;
+}
+
+.rowStyle div {
+	background-color:#10C7F4; 
+    padding: 1em;
+
+}
+.card1 {
+	padding-left: 40px;
+}
+
+.footer{
+
+	text-align: center;
+	font-size: 1.4rem;
+	color: grey;
+
+}
+@media screen and(max-width: 321px) {
+
+	.styling1 {
+          color: white;
+          font-size: 2.5rem;
+          font-family: sans-serif;
+	}
+}

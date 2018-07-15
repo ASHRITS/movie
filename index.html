@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MoviePedia</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/v4-shims.css">
+
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+     
+       <div class="intro container-full">
+
+         <h1 class="styling"> <!-- <i class="fas fa-video"></i> -->  Welc<i class="fas fa-pause-circle"></i>me To  M<i class="far fa-play-circle"></i>viePedia  <!--  <i class="fas fa-film"></i></h1> -->
+         <br>
+         <br>
+         <h2 class="styling1"><i class="fas fa-video"></i>  A Simpler Way To Search Movies   <i class="fas fa-search"></i></h2>
+
+       </div>
+
+       <div class="title Id"><h3>Search By Title  <i class="fas fa-chevron-circle-right"></i></h3></div>
+
+       <!-- search by Title -->
+       <div class="input-group mb-3 gap">
+       <input type="text" class="form-control" placeholder="Title" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       <div class="input-group-append">
+       <button class="btn btn-outline-primary bg-primary" type="button" style="color: white;">Search</button>
+       </div>
+       </div>
+       <!-- search by title and Year -->
+
+       <div class="year Id"><h3>Search By Title  <i class="fas fa-chevron-circle-right"></i> and Year  <i class="far fa-calendar-alt"></i></h3></div>
+
+
+       <!-- <div class="input-group"> -->
+       <div class="input-group-prepend gap">
+       <input type="text" class="form-control" placeholder="Title">
+       <input type="text" class="form-control" placeholder="Year">
+       <button class="btn btn-outline-primary bg-primary" type="button" style="color: white;">Search</button>
+       </div>
+       <div class="row"><br></div>
+
+      <!-- Search by ID -->
+
+       <div class="Id"><h3>Search By IMDB Id  <i class="far fa-id-badge"></i></h3></div>
+
+       <div class="input-group mb-3 gap">
+       <input type="text" class="form-control" placeholder="Id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       <div class="input-group-append">
+       <button class="btn btn-outline-primary bg-primary" type="button" style="color: white;">Search</button>
+       </div>
+       </div>
+
+   <section id="dataSection1">
+             <div class="container">
+
+      <div class="row">
+
+        <div id="cover" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 coverHeight">
+
+          <div class="row">
+
+            <div id="profilePhoto" class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2" style="margin:3em 0 1em 0;"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row p-3">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 userDetails">
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="far fa-flag"></i>
+              Title :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="userName">
+            </div>
+
+          </div>
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="far fa-calendar"></i>
+              Release Date :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="Gender">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-film"></i>
+              Type :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="email">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="far fa-star"></i>
+              Rated :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="friends">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="far fa-clock"></i>
+              Runtime :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="photos">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-american-sign-language-interpreting"></i>
+              Genre :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="birthday">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-id-badge"></i>
+              imdbID :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="someId">
+            </div>
+
+          </div>
+           <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-language"></i>
+              Language :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="someId">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-dollar-sign"></i>
+              BoxOffice :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="photos">
+            </div>
+
+          </div>
+
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-pencil-alt"></i>
+              Plot : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-users"></i>
+              Actors : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="far fa-user"></i>
+              Director : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="far fa-user-circle"></i>
+              writer : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+           <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-globe-americas"></i>
+              Country : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+           <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2"><i class="fas fa-trophy"></i>
+              Awards : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+     
+   </section>
+
+
+             
+
+
+
+<footer class="footer">&copy Made by Ashhar Imam</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="index.js"></script>
+</html>
